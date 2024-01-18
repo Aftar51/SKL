@@ -9,10 +9,10 @@
     display: inline-block;
     font-size: 1em;
     letter-spacing: .1em;
-    color: #0ef;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid #0ef;
+    border: 2px solid black;
     padding: 10px 35px;
     z-index: 1;
     overflow: hidden;
@@ -21,13 +21,13 @@
 
 .btn:hover {
     transition-delay: 0s, 1s;
-    color: #fff;
+    color: black;
     box-shadow:
-    0 0 10px #0ef,
-    0 0 20px #0ef,
-    0 0 40px #0ef,
-    0 0 80px #0ef,
-    0 0 160px #0ef;
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red,
+    0 0 160px red;
 }
 
 .btn::before{
@@ -37,7 +37,7 @@
     left: -30%;
     width: 0;
     height: 100%;
-    background: #0ef;
+    background: red;
     transform: skewX(35deg);
     z-index: -1;
     transition: 1s;
@@ -77,10 +77,10 @@
 }
 
 .input-check:checked~h2 {
-    color: #00f7ff;
+    color: red;
     text-shadow: 
-        0 0 15px #00f7ff,
-        0 0 30px #00f7ff;
+        0 0 15px red,
+        0 0 30px red;
 }
 .input-box{
     position: relative;
@@ -99,8 +99,8 @@
 }
 
 .input-check:checked~.input-box .input-line{
-    background: #00f7ff;
-    box-shadow: 0 0 10px #00f7ff;
+    background: red;
+    box-shadow: 0 0 10px red;
 }
 
 .input-box label{
@@ -120,8 +120,8 @@
 }
 
 .input-check:checked~.input-box label {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: red;
+    text-shadow: 0 0 10px red;
 }
 
 .input-box input{
@@ -137,8 +137,8 @@
 }
 
 .input-check:checked~.input-box input {
-    color: #00f7ff;
-    text-shadow: 0 0 5px #00f7ff;
+    color: red;
+    text-shadow: 0 0 5px red;
 }
 
 .input-box .icon{
@@ -151,8 +151,8 @@
 }
 
 .input-check:checked~.input-box .icon{
-    color: #00f7ff;
-    filter: drop-shadow(0 0 5px #00f7ff);
+    color: red;
+    filter: drop-shadow(0 0 5px red);
 }
 
 .remember-forgot{
@@ -165,8 +165,8 @@
 }
 
 .input-check:checked~.remember-forgot {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: red;
+    text-shadow: 0 0 10px red;
 }
 
 .remember-forgot label input{
@@ -186,11 +186,11 @@
 }
 
 .input-check:checked~.remember-forgot a {
-    color: #00f7ff;
+    color: red;
 }
 
 .input-check:checked~.remember-forgot label input {
-    accent-color: #00f7ff;
+    accent-color: red;
 }
 
 button {
@@ -208,8 +208,8 @@ button {
 }
 
 .input-check:checked~button{
-    background: #00f7ff;
-    box-shadow: 0 0 15px #00f7ff, 0 0 15px #00f7ff;
+    background: red;
+    box-shadow: 0 0 15px red, 0 0 15px red;
 }
 
 .register-link {
@@ -221,8 +221,8 @@ button {
 }
 
 .input-check:checked~.register-link {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: red;
+    text-shadow: 0 0 10px red;
 }
 
 .register-link p a{
@@ -237,7 +237,7 @@ button {
 }
 
 .input-check:checked~.register-link p a {
-    color: #00f7ff;
+    color: red;
 }
 
 .login-light {
@@ -247,7 +247,7 @@ button {
     transform: translateX(-50%);
     width: 500px;
     height: 10px;
-    background: #00f7ff;
+    background: red;
     border-radius: 20px;
 }
 
@@ -345,10 +345,10 @@ button {
 .input-check:checked~.toggle .text.on {
     top: 76px;
     opacity: 1;
-    color: #00f7ff;
+    color: red;
     text-shadow: 
-        0 0 15px #00f7ff,
-        0 0 30px #00f7ff,
-        0 0 45px #00f7ff,
-        0 0 60px #00f7ff;
+        0 0 15px red,
+        0 0 30px red,
+        0 0 45px red,
+        0 0 60px red;
 }
