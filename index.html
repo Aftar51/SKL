@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDN Boarding School Sentul</title>
+    <title>Richeese</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -19,7 +20,7 @@
     }
 
     .banner {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('images/download\ \(1\).jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('images/toko.jpg');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -35,11 +36,11 @@
     }
 
     .bg-gradients {
-        background-image: linear-gradient(to right, #4a5594 0%, #323c72 100%);
+        background-image: linear-gradient(to right, #191919 0%, #2b2b2d43 100%);
     }
 
     .bg-gradients-episides {
-        background-image: linear-gradient(to right, #323c72 0%, #4a5594 100%);
+        background-image: linear-gradient(to right, #2b2b2d43 0%, #191919 100%);
     }
 
     .blink {
@@ -59,28 +60,56 @@
 
     /* Track */
     ::-webkit-scrollbar-track {
-        background: #000000;
+        background: #323946;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #4d4a4ab6;
+        background: #323946;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #000000;
+        background: #323946;
+    }
+
+    .social-media a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: .2rem solid #0ef;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: #0ef;
+        margin: 3rem 1.5rem 3rem 0;
+        transition: .5s ease;
+    }
+
+    .social-media a:hover {
+        background: #0ef;
+        color: #323946;
+        box-shadow: 0 0 1rem #0ef;
+    }
+
+    .second-home {
+        background-color: #323946;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-black sticky-top">
         <div class="container-fluid">
             <div class="col-md-4">
                 <div class="row">
                     <a class="navbar-brand" href="#">
-                        <img src="images/download.jpeg" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                        <img src="images/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
                     </a>
                 </div>
             </div>
@@ -94,13 +123,16 @@
                     <!-- list menu -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-body" aria-current="page" href="#about">About Us</a>
+                            <a class="nav-link text-light" aria-current="page" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-body" href="#activities">Activities</a>
+                            <a class="nav-link text-light" href="#paket">Paket</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-body" href="#watchlist">Watchlist</a>
+                            <a class="nav-link text-light" href="#watchlist">Watchlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#contact us">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +140,7 @@
                     <div class="row">
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-info" type="submit">Search</button>
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
@@ -117,7 +149,7 @@
     <div class="container-fluid gx-0">
         <div class="banner">
             <div class="banner-content">
-                <h1>IDN Boarding school sentul</h1>
+                <h1>Richeese</h1>
                 <div class="container col-8">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad illum, aspernatur recusandae
@@ -129,96 +161,140 @@
         </div>
     </div>
     <!-- END BANNER -->
-    <!-- DETAILS -->
+    <!-- About -->
     <br id="about">
-    <div class="container mt-5">
-        <div class="card p-3 bg-dark">
+    <div class="container mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="card p-3 bg-secondary">
             <h1 class="text-light">About Us</h1>
         </div>
         <div class="container-fluid mt-2">
             <div class="row align-items-center bg-dark rounded-3">
                 <div class="col-md-7">
                     <div class="py-3">
-                        <img src="images/download (2).jpeg" class="img-fluid rounded-3" width="100%" height="100%" alt="Character 1">
+                        <img src="images/toko.jpg" class="img-fluid rounded-3" width="100%" height="100%" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500" alt="Character 1">
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="p-2">
-                        <p class="text-center text-light">""
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur eum, dicta at eligendi perferendis molestias ea quos beatae alias porro, aut earum nobis consequuntur voluptatem possimus quasi, facilis distinctio quidem saepe dolor soluta eveniet libero! Nisi dolorum odio ratione? Necessitatibus, amet magnam voluptates iure ab eligendi reiciendis commodi. Perferendis cumque quisquam sapiente sequi maiores magni consequatur earum quos labore, blanditiis a, doloremque deserunt beatae quod exercitationem, rem repellat quo natus aperiam vero obcaecati. Qui blanditiis, vero doloribus pariatur eligendi quis cumque modi, tempore nisi assumenda culpa. Voluptatum veniam quod id corrupti quidem, eveniet minima dolorem consequatur sed amet sapiente.
+                        <p class="text-center text-light" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500" >"Richeese"
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur eum, dicta at
+                            eligendi perferendis molestias ea quos beatae alias porro, aut earum nobis consequuntur
+                            voluptatem possimus quasi, facilis distinctio quidem saepe dolor soluta eveniet libero! Nisi
+                            dolorum odio ratione? Necessitatibus, amet magnam voluptates iure ab eligendi reiciendis
+                            commodi. Perferendis cumque quisquam sapiente sequi maiores magni consequatur earum quos
+                            labore, blanditiis a, doloremque deserunt beatae quod exercitationem, rem repellat quo natus
+                            aperiam vero obcaecati. Qui blanditiis, vero doloribus pariatur eligendi quis cumque modi,
+                            tempore nisi assumenda culpa. Voluptatum veniam quod id corrupti quidem, eveniet minima
+                            dolorem consequatur sed amet sapiente.
                         </p>
+                        <div class="col-md-6" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500" >
+                            <a href="#" class="btn float-end"><i class="fa-solid fa-circle-info"></i>View Detail</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- END DETAILS -->
+    <!-- END About -->
     <!-- CONTAINER -->
-    <br id="activities">
+    <br id="paket">
     <div class="container mt-5">
-        <div class="card p-3 bg-dark">
-            <h1 class="text-light text-end"></h1>
+        <div class="card p-3 bg-dark-subtle">
+            <h1 class="text-dark text-center">Paket</h1>
         </div>
         <div class="container-fluid mt-2">
             <div class="row bg-dark rounded-3 text-light p-4">
-                <div class="card border-light mb-3 bg-gradients">
-                    <div class="card-header bg-transparent border-light">
-                        <h5 class="text-center mt-3 text-light">Business Survival</h5>
+                <div class="card border-light mb-3 bg-gradients" data-aos="fade-down-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="card-header bg-danger border-light">
+                        <h5 class="text-center mt-3 text-light">Paket 1</h5>
                     </div>
                     <div class="card-body text-light">
                         <div class="row">
                             <div class="col-md-4 col-sm-12 d-flex justify-content-sm-center">
-                                <img src="images/Screenshot 2024-01-17 113146.png" class="img-fluid rounded-3" alt="Character 1">
+                                <img src="images/download (1).jpeg" class="img-fluid rounded-3" alt="Character 1">
                             </div>
                             <div class="col-md-8 col-sm-12 mt-2">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam possimus a iusto maxime inventore quae omnis magnam amet numquam.</p>
+                                <p class="card-text"></p>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nisi.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer bg-transparent border-light">
+                    <div class="card-footer bg-danger border-light">
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-outline-light float-end"> <i
-                                        class="fa-solid fa-circle-info"></i> View Detail</a>
+                                <a href="#" class="btn float-end"><i class="fa-solid fa-circle-info"></i> View
+                                    Detail</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card border-light mb-3 bg-gradients">
-                    <div class="card-header bg-transparent border-light">
-                        <h5 class="text-center mt-3 text-light">
-                            Conpeticion
-                        </h5>
+                <div class="card border-light mb-3 bg-gradients" data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="card-header bg-danger border-light">
+                        <h5 class="text-center mt-3 text-light">Paket 2</h5>
                     </div>
                     <div class="card-body text-dark">
                         <div class="row">
                             <div class="col-md-4 col-sm-12 d-flex justify-content-sm-center">
-                                <img src="images/download (3).jpeg" class="img-fluid rounded-3" alt="Character 1">
+                                <img src="images/download (2).jpeg" class="img-fluid rounded-3" alt="Character 1">
                             </div>
                             <div class="col-md-8 col-sm-12 mt-2">
                                 <p class="card-text text-light">
                                     
                                 </p>
                                 <p class="text-light">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore quam modi pariatur corrupti, perspiciatis odit aperiam. Numquam, corporis obcaecati.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore quam modi
+                                    pariatur corrupti, perspiciatis odit aperiam. Numquam, corporis obcaecati.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer bg-transparent border-light">
+                    <div class="card-footer bg-danger border-light">
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-outline-light border-light float-end">
-                                    <i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                <a href="#" class="btn float-end"><i class="fa-solid fa-circle-info"></i> View
+                                    Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-light mb-3 bg-gradients" data-aos="fade-down-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="card-header bg-danger border-light">
+                        <h5 class="text-center mt-3 text-light">Paket 3</h5>
+                    </div>
+                    <div class="card-body text-dark">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 d-flex justify-content-sm-center">
+                                <img src="images/download.jpeg" class="img-fluid rounded-3" alt="Character 1">
+                            </div>
+                            <div class="col-md-8 col-sm-12 mt-2">
+                                <p class="card-text text-light">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus quos
+                                    architecto officia et voluptates earum mollitia a, ullam delectus enim quibusdam
+                                    tempore culpa maxime atque cupiditate quo obcaecati facere!
+                                </p>
+                                <p class="text-light">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore quam modi
+                                    pariatur corrupti, perspiciatis odit aperiam. Numquam, corporis obcaecati.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-danger border-light">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn float-end"><i class="fa-solid fa-circle-info"></i> View
+                                    Detail</a>
                             </div>
                         </div>
                     </div>
@@ -234,33 +310,91 @@
             <marquee width="100%" direction="left" scrollamount="25" behavior="scroll"
                 class="blink rounded-3 border mb-2">
                 <h2>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores expedita vero, perferendis veritatis alias explicabo officia in, quos inventore dignissimos aspernatur numquam quam nobis, soluta repellat commodi ratione suscipit! Omnis assumenda doloribus amet quidem ipsum possimus fugiat dolore nobis id ea exercitationem obcaecati dignissimos tempora excepturi suscipit explicabo, architecto provident veritatis praesentium non dicta. Nulla architecto iusto reprehenderit molestias neque temporibus quidem, repellat ipsam, quam rerum vero non in possimus, iure soluta dolores explicabo ullam est veniam! Fugit omnis eos minus debitis reprehenderit provident dolores voluptas, voluptatum exercitationem sed error hic dignissimos quibusdam assumenda quo non numquam quod earum recusandae.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores expedita vero, perferendis
+                    veritatis alias explicabo officia in, quos inventore dignissimos aspernatur numquam quam nobis,
+                    soluta repellat commodi ratione suscipit! Omnis assumenda doloribus amet quidem ipsum possimus
+                    fugiat dolore nobis id ea exercitationem obcaecati dignissimos tempora excepturi suscipit explicabo,
+                    architecto provident veritatis praesentium non dicta. Nulla architecto iusto reprehenderit molestias
+                    neque temporibus quidem, repellat ipsam, quam rerum vero non in possimus, iure soluta dolores
+                    explicabo ullam est veniam! Fugit omnis eos minus debitis reprehenderit provident dolores voluptas,
+                    voluptatum exercitationem sed error hic dignissimos quibusdam assumenda quo non numquam quod earum
+                    recusandae.
                 </h2>
             </marquee>
             <marquee width="100%" direction="right" scrollamount="25" behavior="scroll"
                 class="blink rounded-3 border mb-2">
-                
-                <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                <img src="/images/download (1).jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 <a href="">
-                    <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                    <img src="/images/download (2).jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 </a>
                 <a href="">
-                    <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                    <img src="/images/download (3).jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 </a>
                 <a href="">
-                    <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                    <img src="/images/download.jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 </a>
                 <a href="">
-                    <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                    <img src="/images/download (5).jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 </a>
                 <a href="">
-                    <img src="" class="img-thumbnail gx-0" alt="Character 1">
+                    <img src="/images/download (4).jpeg" class="img-thumbnail gx-0" alt="Character 1">
                 </a>
             </marquee>
         </div>
     </div>
-    <div class="border-light card"></div>
     <!-- END TABLES -->
+    <!-- Login -->
+    <br id="contact us">
+    <div class="container mt-5" data-aos="fade-down">
+        <div class="card p-3 bg-dark">
+            <h1 class="text-light">Contact us</h1>
+        </div>
+        <div class="body">
+            <div class="login-box">
+                <form action="#">
+                    <input type="checkbox" class="input-check" id="input-check">
+                    <label for="input-check" class="toggle">
+                        <span class="text off">off</span>
+                        <span class="text on">on</span>
+                    </label>
+                    <div class="login-light"></div>
+                    <h2>Contact us</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Login -->
+
+    <section class="second-home">
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Aftar51"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
